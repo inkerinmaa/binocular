@@ -6,6 +6,11 @@
 .header {
     display: flex;
     align-items: center;
+    background-color: #2B2A28;
+}
+
+.logo {
+    margin: 30px;
 }
 
 .header__btns {
@@ -23,4 +28,19 @@
     font-size: 13px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.nav__item {
+    margin: 0 auto;
+}
+
+.welcome__intro {
+    margin: 40px;
+}
+
+.welcome__order {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
 }
