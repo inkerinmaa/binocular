@@ -106,6 +106,12 @@ function icons() {
         .pipe(dest(paths.build + 'icons/'));
 }
 
+function images() {
+  return src(paths.src + 'img/**/*.{jpg,jpeg,png,gif,svg}')
+    .pipe(imagemin())
+    .pipe(dest(paths.build + 'img/'));
+}
+
 // function php() {
 //     return src(paths.src + '*.php')
 //         .pipe(plumber())
@@ -117,7 +123,7 @@ function clean() {
 }
 
 function watcher() {
-    watch(paths.src + 'scss/*.scss', styles);
+    watch(paths.src + 'scss/**/*.scss', styles);
     watch(paths.src + 'js/*.js', scripts);
     watch(paths.src + '*.html', htmls);
   }
@@ -134,6 +140,7 @@ function serve() {
 exports.styles = styles;
 exports.scripts = scripts;
 exports.fonts = fonts;
+exports.images = images;
 exports.htmls = htmls;
 exports.svgSprite = svgSprite;
 exports.clean = clean;
@@ -141,11 +148,11 @@ exports.watcher = watcher;
 
 exports.build = series(
   clean,
-  parallel(styles, svgSprite, scripts, fonts, htmls)
+  parallel(styles, svgSprite, images, scripts, fonts, htmls)
 );
 
 exports.default = series(
   clean,
-  parallel(styles, svgSprite, scripts, fonts, htmls, icons),
+  parallel(styles, svgSprite, scripts, images, fonts, htmls, icons),
   parallel(watcher, serve),
 );

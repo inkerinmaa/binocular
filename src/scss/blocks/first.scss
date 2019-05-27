@@ -1,0 +1,26 @@
+.first {
+    background: url('../img/bg-1.png') center center no-repeat;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header__btns {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__link {
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
