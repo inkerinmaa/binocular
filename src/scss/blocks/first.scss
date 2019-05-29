@@ -1,19 +1,33 @@
 .first {
     background: url('../img/bg-1.png') center center no-repeat;
     background-size: cover;
+    flex-direction: column;
 }
 
-.header {
-    display: flex;
-    align-items: center;
+.header {        
     background-color: #2B2A28;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
 }
 
 .logo {
     margin: 30px;
 }
 
+.description {
+    color: #ffffff;
+}
+
 .header__btns {
+    display: flex;
+    align-items: center;
+}
+
+.socials__list {
     display: flex;
     align-items: center;
 }
@@ -31,7 +45,10 @@
 }
 
 .nav__item {
+    display: flex;
+    align-items: center;
     margin: 0 auto;
+    color: #ffffff
 }
 
 .welcome__intro {
