@@ -71,9 +71,9 @@ function svgSprite() {
 function scripts() {
     return src(paths.src + 'js/*.js')
       .pipe(plumber())
-      .pipe(babel({
-        presets: ['@babel/env']
-      }))
+      // .pipe(babel({
+      //   presets: ['@babel/env']
+      // }))
       .pipe(uglify())
       .pipe(concat('script.min.js'))
       .pipe(dest(paths.build + 'js/'))

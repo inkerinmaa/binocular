@@ -13,7 +13,7 @@
  * License: GPL v3
  *
  * ========================================================== */
-
+	
 function onePageScroll(element, options) {
   
   var defaults = {
@@ -40,10 +40,11 @@ function onePageScroll(element, options) {
 	    paginationList = "",
 	    body = document.querySelector("body");
   
+  this.init = function() { 
     /*-------------------------------------------*/
     /*  Prepare Everything                       */
     /*-------------------------------------------*/
-    this.init = function() { 
+    
   	_addClass(el, "onepage-wrapper")
   	el.style.position = "relative";
     
@@ -128,8 +129,8 @@ function onePageScroll(element, options) {
   		if (!_hasClass(body, "disabled-onepage-scroll")) _init_scroll(event, delta);
   	}
     
-  	document.addEventListener('mousewheel', _mouseWheelHandler);
-  	document.addEventListener('DOMMouseScroll', _mouseWheelHandler);
+  	document.addEventListener('mousewheel', _mouseWheelHandler, { passive: false });
+  	document.addEventListener('DOMMouseScroll', _mouseWheelHandler, { passive: false });
     
     
   	if(settings.responsiveFallback != false) {
@@ -521,9 +522,12 @@ function onePageScroll(element, options) {
  
    return orig;
  };
+	
 
 onePageScroll(".maincontent", {
 	sectionContainer: "section",
 	loop: true,
 	responsiveFallback: false
 });
+
+
