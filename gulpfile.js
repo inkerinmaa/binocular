@@ -53,19 +53,19 @@ function styles() {
 // }
 
 function svgSprite() {
-    return src(paths.src + 'icons/*.svg')
-      .pipe(svgmin(function (file) {
-        return {
-          plugins: [{
-            cleanupIDs: {
-              minify: true
-            }
-          }]
-        }
-      }))
-      .pipe(svgstore({ inlineSvg: true }))
-      .pipe(rename('sprite-svg.svg'))
-      .pipe(dest(paths.build + 'img/'));
+  return src(paths.src + 'svg/*.svg')
+    .pipe(svgmin(function (file) {
+      return {
+        plugins: [{
+          cleanupIDs: {
+            minify: true
+          }
+        }]
+      }
+    }))
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename('sprite-svg.svg'))
+    .pipe(dest(paths.build + 'img/'));
 }
   
 function scripts() {
