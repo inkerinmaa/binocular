@@ -11,7 +11,7 @@ const autoprefixer = require('autoprefixer');
 
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-const babel = require('gulp-babel');
+// const babel = require('gulp-babel');
 
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
@@ -20,9 +20,31 @@ const del = require('del');
 const plumber = require('gulp-plumber');
 const browserSync = require('browser-sync').create();
 
-const svgstore = require('gulp-svgstore');
+// const svgstore = require('gulp-svgstore');
 const svgmin = require('gulp-svgmin');
 const imagemin = require('gulp-imagemin');
+const cheerio = require('gulp-cheerio');
+const svgSpriteGulp = require('gulp-svg-sprite');
+const config = {
+  shape: {
+            dimension: { // Set maximum dimensions
+              maxWidth: 32,
+              maxHeight: 32
+            },
+  spacing: { //Add padding
+              padding: 10
+            },
+          },
+  mode: {
+      inline: true,
+      symbol: true, // Create a «symbol» sprite
+    css: { // Activate the «css» mode
+      render: {
+        scss: true // Activate CSS output (with default options)
+      }
+    }
+  }
+};
 
 const paths =  {
     src: './src/',              // paths.src
@@ -54,17 +76,32 @@ function styles() {
 
 function svgSprite() {
   return src(paths.src + 'svg/*.svg')
-    .pipe(svgmin(function (file) {
-      return {
-        plugins: [{
-          cleanupIDs: {
-            minify: true
-          }
-        }]
+    .pipe(svgmin({
+      js2svg: {
+          pretty: true
       }
     }))
-    .pipe(svgstore({ inlineSvg: true }))
-    .pipe(rename('sprite-svg.svg'))
+    // .pipe(svgmin(function (file) {
+    //   return {
+    //     plugins: [{
+    //       cleanupIDs: {
+    //         minify: true
+    //       }
+    //     }]
+    //   }
+    // }))
+    // 
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+        $('[stroke]').removeAttr('stroke');
+        $('[style]').removeAttr('style');
+      },
+      parserOptions: {xmlMode: true}
+    }))
+    // cheerio plugin create unnecessary string '&gt;', so replace it.
+    .pipe(replace('&gt;', '>'))
+    .pipe(svgSpriteGulp(config))
     .pipe(dest(paths.build + 'img/'));
 }
   
