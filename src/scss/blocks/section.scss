@@ -2,7 +2,7 @@
     height: if($onePage, 100%, 100vh); 
     min-height: 650px; 
     position: relative; 
-    display: flex; 
+    // display: flex; 
     overflow: hidden; 
     
     @include tablets { 
