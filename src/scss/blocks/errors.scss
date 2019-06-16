@@ -1,0 +1,32 @@
+.errors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+.errors__title {
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    text-align: center;
+}
+
+.errors__problems {
+    margin: 30px 0px;
+}
+
+.problems__title {
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    text-align: center;
+}
+
+.problems__content {
+    margin: 30px 0px;
+}
+
+.problems__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

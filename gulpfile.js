@@ -144,7 +144,7 @@ function icons() {
 }
 
 function images() {
-  return src(paths.src + 'img/**/*.{jpg,jpeg,png,gif,svg}')
+  return src(paths.src + 'img/**/*.{jpg,jpeg,png,gif,svg,PNG}')
     .pipe(imagemin())
     .pipe(dest(paths.build + 'img/'));
 }
