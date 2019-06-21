@@ -1,0 +1,23 @@
+.main-form {
+    margin: 70px 0px;
+}
+
+.form__description--main {    
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    color: rgb(41, 20, 77);
+    margin: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.form__pdf {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    color: rgb(41, 20, 77);
+}
+
+.horizontal-input {
+    display: flex;
+    justify-content: center;
+}

@@ -26,15 +26,15 @@ const imagemin = require('gulp-imagemin');
 const cheerio = require('gulp-cheerio');
 const svgSpriteGulp = require('gulp-svg-sprite');
 const config = {
-  shape: {
-            dimension: { // Set maximum dimensions
-              maxWidth: 32,
-              maxHeight: 32
-            },
-  spacing: { //Add padding
-              padding: 10
-            },
-          },
+  // shape: {
+  //           dimension: { // Set maximum dimensions
+  //             maxWidth: 32,
+  //             maxHeight: 32
+  //           },
+  // spacing: { //Add padding
+  //             padding: 10
+  //           },
+  //         },
   mode: {
       inline: true,
       symbol: true, // Create a «symbol» sprite
@@ -80,6 +80,9 @@ function svgSprite() {
       js2svg: {
           pretty: true
       }
+      // plugins: [{
+      //   removeViewBox: false
+      //  }]
     }))
     // .pipe(svgmin(function (file) {
     //   return {

@@ -1,9 +1,27 @@
 .btn {
-    padding: 10px;
+    min-width: 200px;
     background: $blue;
-    text-transform: uppercase;
-    display: inline-block;
-    color: #fff;
-    border-radius: 3px;
     text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 35px;
+    padding: 1.5em;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    border-radius: 10rem;
+    border-style: none;
+    border-width: 0px;
+
+    &--main {        
+        margin: 10px 15px;
+        width: 300px;
+        }
+
+    &--revenue {
+        width: 250px;
+        margin: 10px 5px;
+    }
 }

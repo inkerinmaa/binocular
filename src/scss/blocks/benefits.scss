@@ -1,0 +1,47 @@
+.benefits {
+    margin-top: 30px;
+    background: url('../img/bg-2.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.benefits__business {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    color: #fff;
+    margin: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.benefits__list {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.benefits__item {
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 30px;
+}
+
+.benefits__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.asset-1, .asset-2, .asset-3, .asset-4, .asset-5, .asset-6, .asset-7, .asset-8, .asset-9 {
+    fill: white;
+}
+
+.benefits__desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+    margin-top: 20px;
+    color: azure;
+}
+

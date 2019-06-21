@@ -1,15 +1,19 @@
 .revenue {
-    background: url('../img/bg-1.jpg') center center no-repeat;
+    background: url('../img/bg-welcome.jpg') center center no-repeat;
     background-size: cover;
 }
 
 .welcome__intro {
     margin: 40px;
+    text-align: center;
+}
+
+.welcome__howto {
+    font-size: 20px;
 }
 
 .welcome__order {
     display: flex;
-    // // flex: 1;
-    // align-items: center;
-    // justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }

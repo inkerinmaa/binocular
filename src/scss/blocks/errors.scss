@@ -7,7 +7,8 @@
 
 .errors__title {
     font-family: 'Ubuntu';
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -17,7 +18,8 @@
 
 .problems__title {
     font-family: 'Ubuntu';
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 24px;
     text-align: center;
 }
 
@@ -27,6 +29,34 @@
 
 .problems__list {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.problems__item {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.problems__icon {
+    display: flex;
+    width: 100px;
+    height: 100px;
     align-items: center;
     justify-content: center;
+
+}
+
+.toe-down {
+    fill: black;
+}
+
+.problems__desc {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
 }
