@@ -1,0 +1,53 @@
+
+
+.mods__possible {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 42px;
+    text-align: center;
+    margin: 30px;
+}
+
+.mods__mod {
+    display: flex;
+    margin-top: 150px;
+}
+
+.mod__pic {  
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background: url(../img/bg-4.png) center center no-repeat;
+    height: 300px;
+    width: 300px;
+    border: 2px dotted #00f;
+    border-radius: 50%;
+    margin-left: 80px;
+}
+
+.mod__img {    
+    margin-left: -25%;
+    margin-top: -21%;
+}
+
+.mod__img--standard {
+    margin-left: 14%;
+    margin-top: -45%;
+}
+
+.mod__description {
+    padding: 0px 40px;
+}
+
+.mod__title {
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.mod__text {
+    margin-top: 40px;
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 20px;
+}

@@ -34,5 +34,8 @@
     "gulp-svgmin": "^2.1.0",
     "gulp-svgstore": "^7.0.0",
     "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "siema": "^1.5.1"
   }
 }
