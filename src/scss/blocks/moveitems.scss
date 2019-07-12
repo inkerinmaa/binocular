@@ -1,0 +1,52 @@
+.moveitems {
+    background: url('../img/bg-2.jpg') center center no-repeat;
+    background-size: cover; 
+    height: 600px;
+    margin-bottom: 30px;
+}
+
+.moveitems__header {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 50px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.moveitems__grid {
+    margin-top: 20px;
+}
+
+.moveitems__list {
+    display: flex;
+}
+
+.moveitems__item {
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+.moveitems__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moveitems__desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    margin-top: 20px;
+    color: azure;
+}
+
+.wrenchmove, .binocularmove, .oilmove, .starmove {
+    fill: white;
+}

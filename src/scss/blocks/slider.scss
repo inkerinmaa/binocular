@@ -1,25 +1,72 @@
+.slider {
+  margin-top: 100px;
+}
+
 .slider__content {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 65vh;
+  height: 371px;
+}
+
+.slider__list {
+  display: flex;
+  position: absolute;
+}
+
+.slider__item {
+  width: 100vw;
+}
+
+.slider__info {
+  display: flex;
+}
+
+.info__text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #E9EAEC;
+
+}
+
+.info__slogan {
+  font-family: Ubuntu;
+  font-weight: 300;
+  font-size: 35px;
+  text-align: left;
+  padding-left: 30px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.info__btn {
+  padding-left: 30px;
 }
 
 .arrow-prev {
   position: absolute;
   transform: rotate(90deg);
   left: 0.625rem;
+  top: 8rem;
   vertical-align: middle;
   z-index: 1;
+  fill: #859DA1;
 }
 
 .arrow-prev:hover .arrow-prev__icon use {
-  fill: #fff; }
+  fill: #859DA1;
+ }
 
 .arrow-next {
   position: absolute;
   transform: rotate(-90deg);
-  right: 0.625rem; }
+  right: 0.625rem;
+  top: 8rem;
+  fill: #859DA1;
+ }
 
-.arrow-next:hover .arrow-next__icon use {
-  fill: rgb(7, 7, 7); }
+.arrow-next:hover use {
+  fill: #859DA1; }
