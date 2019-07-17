@@ -1,0 +1,97 @@
+.advert {
+    background: url('../img/bg-7.jpg') bottom left no-repeat;
+    background-size: cover;    
+    height: 685px;
+    position: relative;
+}
+
+.advert__desc {
+    position: absolute;
+    right: 5%;
+    top: 280px;
+    max-width: 500px;
+} 
+
+.desc__header {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+    margin: 30px 10px;
+    color: #fff;
+}
+
+.desc__desc {
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    margin: 30px;
+    color: #fff;
+}
+
+.advert__header {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 30px;
+    color: #fff;
+}
+
+.advert__list {
+    padding-left: 0px;
+    list-style: none;
+    counter-reset: counter;
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: start;
+}
+
+.advert__pointer {
+    display: block;
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    width: 20px;
+    height: 100px;
+    border-right: 2px dotted #fff;
+}
+
+.advert__pointer::before {
+    display: inline-block;
+    position: absolute;
+    left: -400%;
+    top: -70%;
+    content: "Место под рекламу";
+    font-size: 25px;
+    color: #fff;
+    padding: 3px;
+    height: 70px;
+    width: 190px;
+    text-align: center;
+    border-radius: 50%;
+    /* border: 2px dotted #fff; */
+}
+
+.savings__section {
+    text-align: center;
+    margin: 20px;
+}
+
+.savings__header {
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 23px;
+    text-align: start;
+    margin: 20px;
+}
+
+.savings__text {
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: start;
+}

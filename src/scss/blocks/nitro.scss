@@ -1,0 +1,51 @@
+.nitro, .tube {
+    background-color: #E9EAEC;
+}
+
+.nitro__content, .tube__content{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0px 20px 0px;
+}
+
+.nitro__description, .tube__description{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nitro__title, .tube__title{
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: start;
+    margin: 20px;
+}
+
+.nitro__text, .tube__text{
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: start;
+    margin: 20px;
+}
+
+.tube__description {
+    margin-left: 40px;
+}
+
+.pict__desc {
+    text-align: center;
+}
+
+.nitro__pict {
+    transform: scale(1.2);
+    margin-bottom: 20px;
+}
+
+.tube__pict {
+    transform: scale(1.2);
+    margin-left: 40px;
+}

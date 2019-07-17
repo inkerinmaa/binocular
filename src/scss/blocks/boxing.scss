@@ -1,0 +1,29 @@
+.boxing__content {
+    display: flex;
+}
+
+.boxing__img {
+    height: 417px;
+    width: 50%;
+}
+
+.boxing__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 40px;
+}
+
+.boxing__title {
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.boxing__text {
+    margin-top: 40px;
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 20px;
+}
+

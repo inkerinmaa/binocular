@@ -1,0 +1,48 @@
+.addfunc {
+    margin-top: 30px;
+    background: url('../img/bg-2.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.addfunc__business {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    color: #fff;
+    margin: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.addfunc__list {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.addfunc__item {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    width: 33%;
+    margin-bottom: 30px;
+}
+
+.addfunc__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 105px;
+}
+
+.addfunc__desc {
+    text-align: center;
+    margin-top: 20px;
+    color: azure;
+    height: 150px;
+}
+
+.desc__title {
+    margin: 20px 10px;
+}
