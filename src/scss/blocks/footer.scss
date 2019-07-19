@@ -1,0 +1,25 @@
+.footer {
+    background-color: #2B2A28;
+    height: 140px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+}
